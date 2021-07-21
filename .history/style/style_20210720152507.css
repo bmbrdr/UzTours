@@ -8,8 +8,8 @@ html{
 }
 body{
     font-family: 'Lato', sans-serif;
-    font-size: 1.6rem;
-    padding: 3rem;
+    font-size: 16px;
+    padding: 30px;
 }
 
 .heading{
@@ -34,7 +34,7 @@ body{
         display: block;
         font-size: 100%;
         font-weight: 400;
-        letter-spacing: 4rem;
+        letter-spacing: 40px;
         animation: MoveInLeft 2s;
     }
 /* Uzbekistan */
@@ -51,8 +51,8 @@ body{
         left: 4rem;
     }
     .header__logo {
-        height: 6rem;
-        width: 6rem;
+        height: 5rem;
+        width: 4.5rem;
     }
 /* Button "Discover our tours */
 .btn, .btn:link, .btn:visited {
@@ -62,14 +62,12 @@ body{
     border-radius: 10rem;
     text-transform: uppercase;
     transition: all .2s;
-    position:absolute;
-    top: 15rem;
-    left:18rem;
+    position: relative;
     border: none;
     cursor: pointer; }
   
     .btn--animated {
-    animation: MoveInBot .5s ease-out .75s;
+    animation: moveinbot 1s ease-out .75s;
     animation-fill-mode: backwards; }
   
     .btn--white {
@@ -96,7 +94,7 @@ body{
     content: "";
     height: 100%;
     width: 100%;
-    border-radius: 10rem;
+    border-radius: 1rem;
     display: inline-block;
     position: absolute;
     top: 0;
@@ -163,7 +161,7 @@ body{
     @keyframes MoveInRight {
         0%{
             opacity: 0;
-            transform: translate(10rem) rotateX(-120deg);
+            transform: translate(10rem rotateX(-120deg);
         }
         80% {
             transform: translate(-1rem);
@@ -177,7 +175,7 @@ body{
     @keyframes MoveInBot {
         0%{
             opacity: 0;
-            transform: translateY(5rem)
+            transform: translateY(4rem)
         }
         100%{
             opacity: 1;
@@ -185,4 +183,3 @@ body{
         }
         
     }
-    

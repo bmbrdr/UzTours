@@ -69,7 +69,7 @@ body{
     cursor: pointer; }
   
     .btn--animated {
-    animation: MoveInBot .5s ease-out .75s;
+    animation: moveinbot 1s ease-out .75s;
     animation-fill-mode: backwards; }
   
     .btn--white {
@@ -163,7 +163,7 @@ body{
     @keyframes MoveInRight {
         0%{
             opacity: 0;
-            transform: translate(10rem) rotateX(-120deg);
+            transform: translate(10rem rotateX(-120deg);
         }
         80% {
             transform: translate(-1rem);
@@ -177,7 +177,7 @@ body{
     @keyframes MoveInBot {
         0%{
             opacity: 0;
-            transform: translateY(5rem)
+            transform: translateY(4rem)
         }
         100%{
             opacity: 1;
@@ -185,4 +185,3 @@ body{
         }
         
     }
-    

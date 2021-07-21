@@ -69,7 +69,7 @@ body{
     cursor: pointer; }
   
     .btn--animated {
-    animation: MoveInBot .5s ease-out .75s;
+    animation: moveinbot 1s ease-out .75s;
     animation-fill-mode: backwards; }
   
     .btn--white {
@@ -177,7 +177,7 @@ body{
     @keyframes MoveInBot {
         0%{
             opacity: 0;
-            transform: translateY(5rem)
+            transform: translateY(50rem)
         }
         100%{
             opacity: 1;

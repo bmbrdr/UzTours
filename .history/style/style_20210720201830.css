@@ -51,8 +51,8 @@ body{
         left: 4rem;
     }
     .header__logo {
-        height: 6rem;
-        width: 6rem;
+        height: 5rem;
+        width: 4.5rem;
     }
 /* Button "Discover our tours */
 .btn, .btn:link, .btn:visited {
@@ -62,14 +62,12 @@ body{
     border-radius: 10rem;
     text-transform: uppercase;
     transition: all .2s;
-    position:absolute;
-    top: 15rem;
-    left:18rem;
+    position: relative;
     border: none;
     cursor: pointer; }
   
     .btn--animated {
-    animation: MoveInBot .5s ease-out .75s;
+    animation: moveinbot 1s ease-out .75s;
     animation-fill-mode: backwards; }
   
     .btn--white {
@@ -163,7 +161,7 @@ body{
     @keyframes MoveInRight {
         0%{
             opacity: 0;
-            transform: translate(10rem) rotateX(-120deg);
+            transform: translate(10rem rotateX(-120deg);
         }
         80% {
             transform: translate(-1rem);
@@ -177,7 +175,7 @@ body{
     @keyframes MoveInBot {
         0%{
             opacity: 0;
-            transform: translateY(5rem)
+            transform: translateY(4rem)
         }
         100%{
             opacity: 1;
@@ -185,4 +183,3 @@ body{
         }
         
     }
-    
