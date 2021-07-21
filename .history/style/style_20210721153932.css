@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 html{
-    font-size: 62.5%;
+    font-size: 62%;
 }
 body{
     font-family: 'Lato', sans-serif;
@@ -185,10 +185,4 @@ body{
         }
         
     }
-    /* Need to thing! */
-    /* Need to thing! */
-    /* Need to thing! */
-    /* Need to thing! */
-    @keyframes ForLogo {
-        
-    }
+    
