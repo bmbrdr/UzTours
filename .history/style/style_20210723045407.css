@@ -19,7 +19,7 @@ body{
     background-position: top;
     clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
     }
-    .heading__primary {
+    .heading-primary {
         text-transform: uppercase;
         color: #fff; }
 /* Welcome to Uzbekistan */
@@ -30,7 +30,7 @@ body{
             transform: translate(-50%, -50%);
             text-align: center}
 /* Welcome to */
-    .heading--primary--main {
+    .heading-primary--main {
         display: block;
         font-size: 100%;
         font-weight: 400;
@@ -45,15 +45,16 @@ body{
         letter-spacing: 2.5rem;
         animation: MoveInRight 2s;}
 /* LOGO */
-    .header__logo--box {
+    .header__logo-box {
         position: absolute;
         top: 4rem;
         left: 4rem;
-        animation: ForLogo 1.5s infinite;
     }
     .header__logo {
         height: 6rem;
         width: 6rem;
+        animation: ForLogo;
+        animation-duration: 2s;
     }
 /* Button "Discover our tours */
 .btn, .btn:link, .btn:visited {
@@ -190,11 +191,22 @@ body{
     /* Need to thing! */
     /* Need to thing! */
     /* Need to thing! */
-    @keyframes ForLogo{   
+    @keyframes ForLogo {   
         0%{
-            transform: rotate(0deg) 
-                }
+            opacity: 0;
+            height: 12rem;
+            width: 12rem;            
+        }
+        25% {
+            opacity: .25;
+        }
+        50%{
+            opacity: .5;
+        }
+        75%{
+            opacity: .75;
+        }
         100%{
-            transform: rotate(360deg)
+            opacity: 1;
         }
      }
