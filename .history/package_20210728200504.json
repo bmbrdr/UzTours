@@ -1,0 +1,25 @@
+{
+  "name": "uztours",
+  "version": "1.0.0",
+  "description": "You can use the [editor on GitHub](https://github.com/bmbrdr/Uztours/edit/main/README.md) to maintain and preview the content for your website in Markdown files.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bmbrdr/Uztours.git"
+  },
+  "keywords": [
+    "ZxeljTYJN_01"
+  ],
+  "author": "BmBrDr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bmbrdr/Uztours/issues"
+  },
+  "homepage": "https://github.com/bmbrdr/Uztours#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
