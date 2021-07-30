@@ -1,0 +1,18 @@
+%btn_focus{
+    outline: none;
+    transform: translateY(-.1rem);
+    box-shadow: rgba($color-black, 0.2) 0 0.5rem 1rem;
+}
+%btn{
+    text-decoration: none;
+    display: inline-block;
+    padding: 1.5rem 4rem;
+    border-radius: 10rem;
+    text-transform: uppercase;
+    transition: all .2s;
+    position:absolute;
+    top: 15rem;
+    left:18rem;
+    border: none;
+    cursor: pointer;
+}
