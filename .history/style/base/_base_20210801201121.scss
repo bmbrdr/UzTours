@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+
+html{
+    font-size: 62.5%;}
+
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    padding: 3rem;}
+.row{
+    margin-bottom: $margin-bottom;
+
+    margin-right: 5rem;
+    @include clearfix;
+    
+}
+// .colum_1_of_2, .colum_1_of_3, .colum_1_of_4{
+//     float:left;
+//     margin-right: 50%;
+// }
