@@ -13,6 +13,6 @@
     -webkit-background-clip: text;
     color:transparent;
     background-image:linear-gradient(to right,
-    rgba($color-primary-light, 1),
+    rgba($color-primary-light darken 15%, 1),
     rgba($color-primary-dark, 1));
 }

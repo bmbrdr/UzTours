@@ -1,0 +1,8 @@
+.u-text-about{
+    text-align: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image:linear-gradient(to right,
+    rgba($color-primary-light, 1),
+    rgba($color-primary-dark, 1));
+}

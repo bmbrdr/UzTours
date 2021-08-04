@@ -8,11 +8,7 @@
     text-transform: uppercase;
     letter-spacing: .8rem;
     font-weight: 800;
-    font-size: 3rem;    
-    background-clip: text;
+    font-size: 3rem;
+    background-image:linear-gradient(to left, rgb(#$color-primary-dark), rgb($color-primary-light));
     -webkit-background-clip: text;
-    color:transparent;
-    background-image:linear-gradient(to right,
-    rgba($color-primary-light, 1),
-    rgba($color-primary-dark, 1));
 }

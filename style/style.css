@@ -210,7 +210,11 @@ body {
   text-transform: uppercase;
   letter-spacing: .8rem;
   font-weight: 800;
-  font-size: 3rem; }
+  font-size: 3rem;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(to right, #ffd12a, #f64747); }
 
 /* line 1, style/utility/_utility.scss */
 .u-text-about {
