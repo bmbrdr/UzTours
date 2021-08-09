@@ -30,6 +30,29 @@ body {
   letter-spacing: 2.5rem;
   animation: MoveInRight 2s; }
 
+/* line 16, style/base/_typography.scss */
+.heading-secondary {
+  letter-spacing: .8rem;
+  font-weight: 800;
+  font-size: 3rem;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(to right, #00b09b, #96c93d);
+  transition: all 1s; }
+  /* line 29, style/base/_typography.scss */
+  .heading-secondary:hover {
+    transform: skewX(10deg) skewY(2deg) scale(1.5); }
+
+/* line 34, style/base/_typography.scss */
+.heading-tertiary {
+  font-weight: 600;
+  font-size: 2rem; }
+
+/* line 39, style/base/_typography.scss */
+.heading-tertiary, .paragraph {
+  color: #595959; }
+
 @keyframes MoveInLeft {
   0% {
     opacity: 0;
@@ -64,10 +87,34 @@ body {
   100% {
     transform: rotate(360deg); } }
 
+/* line 1, style/base/_utility.scss */
+.u-text-center {
+  text-align: center; }
+
+/* line 4, style/base/_utility.scss */
+.u-text-up {
+  text-transform: uppercase; }
+
+/* line 7, style/base/_utility.scss */
+.u-margin-bot-big {
+  margin-bottom: 8rem; }
+
+/* line 10, style/base/_utility.scss */
+.u-margin-bot-mid {
+  margin-bottom: 2rem; }
+
+/* line 13, style/base/_utility.scss */
+.u-margin-bot-small {
+  margin-bottom: .8rem; }
+
+/* line 16, style/base/_utility.scss */
+.u-text-size {
+  font-size: 2rem; }
+
 /* line 2, style/layout/_header.scss */
 .heading {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(255, 209, 42, 0.8), rgba(246, 71, 71, 0.6)), url(background.jpg);
+  background-image: linear-gradient(to right bottom, rgba(0, 176, 155, 0.8), rgba(150, 201, 61, 0.6)), url(background.jpg);
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); }
@@ -99,7 +146,6 @@ body {
 /* line 1, style/layout/_grid.scss */
 .row {
   width: 144rem;
-  background-color: #eee;
   margin: 0 auto; }
   /* line 6, style/layout/_grid.scss */
   .row:not(:last-child) {
@@ -113,7 +159,6 @@ body {
 /* line 14, style/layout/_grid.scss */
 [class^=col-] {
   float: left;
-  background-color: #fc9b1c;
   padding: 2rem; }
   /* line 18, style/layout/_grid.scss */
   [class^=col-]:not(:last-child) {
@@ -198,23 +243,67 @@ body {
   z-index: -1;
   transition: all .4s; }
 
+/* line 59, style/components/_buttons.scss */
+.btn-text:link, .btn-text:visited {
+  position: absolute;
+  display: inline;
+  text-decoration: none;
+  color: #00b09bbe;
+  padding: .7rem;
+  border-bottom: #00b09bbe solid 1px;
+  transition: all .2s; }
+
+/* line 70, style/components/_buttons.scss */
+.btn-text:hover {
+  transform: translateY(-3px);
+  background-color: #00b09bbe;
+  color: #fff;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+
+/* line 76, style/components/_buttons.scss */
+.btn-text:focus {
+  transform: translateY(0);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+
+/* line 1, style/components/_images.scss */
+.composition {
+  position: relative; }
+  /* line 4, style/components/_images.scss */
+  .composition__photo {
+    width: 55%;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+    z-index: 10;
+    position: absolute;
+    outline-offset: 1.2rem;
+    transition: all .5s; }
+    /* line 12, style/components/_images.scss */
+    .composition__photo--1 {
+      left: 0;
+      top: -2rem; }
+    /* line 17, style/components/_images.scss */
+    .composition__photo--2 {
+      right: 0;
+      top: 2rem; }
+    /* line 21, style/components/_images.scss */
+    .composition__photo--3 {
+      top: 10rem;
+      left: 4rem; }
+    /* line 26, style/components/_images.scss */
+    .composition__photo:hover {
+      outline: 0.7rem solid #55c57a;
+      transform: scale(1.1) translateY(-0.5rem);
+      box-shadow: 0 2.5rem 5rem rgba(0, 0, 0, 0.4);
+      z-index: 20; }
+  /* line 35, style/components/_images.scss */
+  .composition:hover .composition__photo:not(:hover) {
+    transform: scale(0.95); }
+
 /* line 1, style/pages/_page.scss */
 .section-about {
   margin: 25rem auto;
-  background-color: #dcb397;
-  padding: 50rem 0;
+  background-color: #fff;
+  padding: 40rem 0;
   margin-top: -20vh; }
-
-/* line 7, style/pages/_page.scss */
-.text-about {
-  text-transform: uppercase;
-  letter-spacing: .8rem;
-  font-weight: 800;
-  font-size: 3rem;
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  background-image: linear-gradient(to right, #ffd12a, #f64747); }
 
 /* line 1, style/utility/_utility.scss */
 .u-text-about {
