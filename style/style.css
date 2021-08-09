@@ -39,18 +39,17 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  background-image: linear-gradient(to right, #00b09b, #96c93d);
   transition: all 1s; }
-  /* line 29, style/base/_typography.scss */
+  /* line 27, style/base/_typography.scss */
   .heading-secondary:hover {
     transform: skewX(10deg) skewY(2deg) scale(1.5); }
 
-/* line 34, style/base/_typography.scss */
+/* line 32, style/base/_typography.scss */
 .heading-tertiary {
   font-weight: 600;
   font-size: 2rem; }
 
-/* line 39, style/base/_typography.scss */
+/* line 37, style/base/_typography.scss */
 .heading-tertiary, .paragraph {
   color: #595959; }
 
@@ -159,33 +158,32 @@ body {
 
 /* line 13, style/layout/_grid.scss */
 [class^=col-] {
-  float: left;
-  padding: 2rem; }
-  /* line 16, style/layout/_grid.scss */
+  float: left; }
+  /* line 15, style/layout/_grid.scss */
   [class^=col-]:not(:last-child) {
     margin-right: 6rem; }
 
-/* line 21, style/layout/_grid.scss */
+/* line 20, style/layout/_grid.scss */
 .col-1-of-2 {
   width: calc( (100% - 6rem) / 2); }
 
-/* line 24, style/layout/_grid.scss */
+/* line 23, style/layout/_grid.scss */
 .col-1-of-3 {
   width: calc( (100% - 2 * 6rem) / 3); }
 
-/* line 27, style/layout/_grid.scss */
+/* line 26, style/layout/_grid.scss */
 .col-2-of-3 {
   width: calc(2 * ( (100% - 2 * 6rem) / 3) + 6rem); }
 
-/* line 30, style/layout/_grid.scss */
+/* line 29, style/layout/_grid.scss */
 .col-1-of-4 {
   width: calc( (100% - 3 * 6rem) / 4); }
 
-/* line 33, style/layout/_grid.scss */
+/* line 32, style/layout/_grid.scss */
 .col-2-of-4 {
   width: calc(2 * ( (100% - 3 * 6rem) / 4) + 6rem); }
 
-/* line 36, style/layout/_grid.scss */
+/* line 35, style/layout/_grid.scss */
 .col-3-of-4 {
   width: calc(3 * ( (100% - 3 * 6rem) / 4) + 2 * 6rem); }
 
