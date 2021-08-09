@@ -1,0 +1,15 @@
+.feature-box{
+
+    background-color: rgba($color-white, .8);
+    font-size: 1.5rem;
+    padding: 2.5rem;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+
+    &__icon{
+        background-color: $color-primary-light;
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
+    
+}
