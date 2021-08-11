@@ -4,9 +4,8 @@
     margin-top: -20vh;
 
 
-    background-color: $color-gray;
-    
-}
+    background-color: $color-gray;}
+
 .section-features{
     margin-top: -15vh;
     padding: 25rem 0;    
@@ -22,6 +21,10 @@
     
     transform: skewY(-7deg);
     & > *{
-        transform: skewY(7deg);
-    }
+        transform: skewY(7deg);}}
+
+
+.section-card{
+    background-color: #111;
 }
+

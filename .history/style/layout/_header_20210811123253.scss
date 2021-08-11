@@ -21,11 +21,13 @@
         text-transform: uppercase;
 
 
-        color: $color-white; }
-}
+        color: $color-white; }}
 
 
-    
+    &-secondary{
+        text-transform: uppercase;
+        color: black;
+    }
     
     .header{
 
