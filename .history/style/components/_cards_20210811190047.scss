@@ -21,11 +21,11 @@ position: relative;
 
 
         &--back{
+            z-index: -1;
             transform: rotateY(180deg);
 
             &:hover{
                 transform: rotateY(0);
-            
             }
         }
     }

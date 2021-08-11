@@ -1,0 +1,30 @@
+.cards{
+
+        padding: 20rem 0;
+
+
+    background-color: $color-white;
+
+    &__side{
+
+        border: solid black 1px;
+
+        &--front{
+            border: solid black 1px;
+                // background-color: #fff;
+            
+            &:hover{
+                transform: rotateY(180deg);
+            }
+        }
+
+
+        &--back{
+            transform: rotateY(180deg);
+
+            &:hover{
+                transform: rotateY(0);
+            }
+        }
+    }
+}

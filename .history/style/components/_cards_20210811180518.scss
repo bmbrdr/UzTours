@@ -1,0 +1,30 @@
+.cards{
+
+        float: left;
+
+
+    background-color: $color-white;
+
+    &__side{
+
+        
+
+        &--front{
+            
+                background-color: #fff;
+            
+            &:hover{
+                transform: rotateY(180deg);
+            }
+        }
+
+
+        &--back{
+            transform: rotateY(180deg);
+
+            &:hover{
+                transform: rotateY(0);
+            }
+        }
+    }
+}

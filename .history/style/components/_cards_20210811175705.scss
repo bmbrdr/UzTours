@@ -1,0 +1,17 @@
+.cards{
+    background-color: $color-white;
+
+    &__side{
+
+        
+
+
+        &--back{
+            transform: rotateY(180deg);
+
+            &:hover{
+                transform: rotateY(0);
+            }
+        }
+    }
+}

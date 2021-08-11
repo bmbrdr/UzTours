@@ -13,7 +13,6 @@ position: relative;
 
 
         &--front{
-                transform: rotateY(0);
             &:hover{
                 transform: rotateY(-180deg);
             }
@@ -25,7 +24,6 @@ position: relative;
 
             &:hover{
                 transform: rotateY(0);
-            
             }
         }
     }

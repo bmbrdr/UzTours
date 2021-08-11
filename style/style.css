@@ -322,7 +322,27 @@ body {
 
 /* line 1, style/components/_cards.scss */
 .cards {
-  background-color: #fff; }
+  position: relative; }
+  /* line 6, style/components/_cards.scss */
+  .cards__side {
+    transition: all .8s;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+    height: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0; }
+    /* line 15, style/components/_cards.scss */
+    .cards__side--front {
+      transform: rotateY(0); }
+      /* line 17, style/components/_cards.scss */
+      .cards__side--front:hover {
+        transform: rotateY(-180deg); }
+    /* line 23, style/components/_cards.scss */
+    .cards__side--back {
+      transform: rotateY(180deg); }
+      /* line 26, style/components/_cards.scss */
+      .cards__side--back:hover {
+        transform: rotateY(0); }
 
 /* line 1, style/pages/_home.scss */
 .section-about {
@@ -346,7 +366,7 @@ body {
 /* line 27, style/pages/_home.scss */
 .section-card {
   margin: 0 auto;
-  padding: 40rem 0;
+  padding: 70rem 0;
   margin-top: -20vh;
   background-color: #76ff88; }
 
