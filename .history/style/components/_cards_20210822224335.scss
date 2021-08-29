@@ -1,10 +1,9 @@
-// functionality
 .cards{
     perspective: 150rem;
     -webkit-perspective: 150rem;
     height: 53rem;
     position: relative;
-// animations
+
     &__side{
         height: 53rem;
         transition: all .8s ease;
@@ -28,29 +27,16 @@
                 background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
             }
             &-2{
-                background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
-            }
-            &-3{
-                background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
+                background-image: linear-gradient(to right bottom, $color-primary_light, $color-primary-dark);
             }
         }
     }
     
     &:hover &__side--front{
-        transform: rotateY(-180deg);
+        transform: rotateY(180deg);
     }
     &:hover &__side--back{
         transform: rotateY(0deg);
-    }
-
-// typography
-    &__picture{
-        background-size: cover;
-        height: 23rem;
-
-        &--1{
-            background-image: url(../card1.jpg);
-        }
     }
 }
 

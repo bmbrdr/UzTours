@@ -45,12 +45,7 @@
 
 // typography
     &__picture{
-        background-size: cover;
-        height: 23rem;
-
-        &--1{
-            background-image: url(../card1.jpg);
-        }
+        background-color: rgba($color-orange, .7);
     }
 }
 

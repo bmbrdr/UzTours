@@ -320,29 +320,53 @@ body {
     background-clip: text;
     color: transparent; }
 
-/* line 1, style/components/_cards.scss */
+/* line 2, style/components/_cards.scss */
 .cards {
+  perspective: 150rem;
+  -webkit-perspective: 150rem;
+  height: 53rem;
   position: relative; }
-  /* line 6, style/components/_cards.scss */
+  /* line 8, style/components/_cards.scss */
   .cards__side {
-    transition: all .8s;
-    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
-    height: 10rem;
+    height: 53rem;
+    transition: all .8s ease;
+    font-size: 2rem;
+    width: 100%;
+    border-radius: 3px;
+    overflow: hidden;
+    backface-visibility: hidden;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
     position: absolute;
     top: 0;
     left: 0; }
-    /* line 15, style/components/_cards.scss */
+    /* line 22, style/components/_cards.scss */
     .cards__side--front {
-      transform: rotateY(0); }
-      /* line 17, style/components/_cards.scss */
-      .cards__side--front:hover {
-        transform: rotateY(-180deg); }
-    /* line 23, style/components/_cards.scss */
+      background-color: #fff; }
+    /* line 25, style/components/_cards.scss */
     .cards__side--back {
       transform: rotateY(180deg); }
-      /* line 26, style/components/_cards.scss */
-      .cards__side--back:hover {
-        transform: rotateY(0); }
+      /* line 27, style/components/_cards.scss */
+      .cards__side--back-1 {
+        background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
+      /* line 30, style/components/_cards.scss */
+      .cards__side--back-2 {
+        background-image: linear-gradient(to right bottom, #00b09bbe, #96c93dc0); }
+      /* line 33, style/components/_cards.scss */
+      .cards__side--back-3 {
+        background-image: linear-gradient(to right bottom, #2998ff, #5643fa); }
+  /* line 39, style/components/_cards.scss */
+  .cards:hover .cards__side--front {
+    transform: rotateY(-180deg); }
+  /* line 42, style/components/_cards.scss */
+  .cards:hover .cards__side--back {
+    transform: rotateY(0deg); }
+  /* line 47, style/components/_cards.scss */
+  .cards__picture {
+    background-size: cover;
+    height: 23rem; }
+    /* line 51, style/components/_cards.scss */
+    .cards__picture--1 {
+      background-image: url(../card1.jpg); }
 
 /* line 1, style/pages/_home.scss */
 .section-about {
@@ -367,8 +391,9 @@ body {
 .section-card {
   margin: 0 auto;
   padding: 70rem 0;
+  padding-bottom: 80rem;
   margin-top: -20vh;
-  background-color: #76ff88; }
+  background-color: #f9fdf7; }
 
 /* line 1, style/utility/_utility.scss */
 .u-text-center {
