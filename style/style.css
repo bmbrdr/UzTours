@@ -326,47 +326,98 @@ body {
   -webkit-perspective: 150rem;
   height: 53rem;
   position: relative; }
-  /* line 8, style/components/_cards.scss */
+  /* line 10, style/components/_cards.scss */
   .cards__side {
     height: 53rem;
-    transition: all .8s ease;
+    transition: all .8s;
+    color: #fff;
     font-size: 2rem;
     width: 100%;
-    border-radius: 3px;
-    overflow: hidden;
     backface-visibility: hidden;
-    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
     position: absolute;
     top: 0;
     left: 0; }
-    /* line 22, style/components/_cards.scss */
+    /* line 36, style/components/_cards.scss */
     .cards__side--front {
       background-color: #fff; }
-    /* line 25, style/components/_cards.scss */
+    /* line 39, style/components/_cards.scss */
     .cards__side--back {
       transform: rotateY(180deg); }
-      /* line 27, style/components/_cards.scss */
+      /* line 41, style/components/_cards.scss */
       .cards__side--back-1 {
         background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
-      /* line 30, style/components/_cards.scss */
+      /* line 44, style/components/_cards.scss */
       .cards__side--back-2 {
         background-image: linear-gradient(to right bottom, #00b09bbe, #96c93dc0); }
-      /* line 33, style/components/_cards.scss */
+      /* line 47, style/components/_cards.scss */
       .cards__side--back-3 {
         background-image: linear-gradient(to right bottom, #2998ff, #5643fa); }
-  /* line 39, style/components/_cards.scss */
+  /* line 53, style/components/_cards.scss */
   .cards:hover .cards__side--front {
     transform: rotateY(-180deg); }
-  /* line 42, style/components/_cards.scss */
+  /* line 56, style/components/_cards.scss */
   .cards:hover .cards__side--back {
-    transform: rotateY(0deg); }
-  /* line 47, style/components/_cards.scss */
+    transform: rotateY(0); }
+  /* line 63, style/components/_cards.scss */
   .cards__picture {
     background-size: cover;
-    height: 23rem; }
-    /* line 51, style/components/_cards.scss */
+    background-blend-mode: screen;
+    height: 23rem;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
+    /* line 69, style/components/_cards.scss */
     .cards__picture--1 {
-      background-image: url(../card1.jpg); }
+      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../../card1.jpg); }
+    /* line 73, style/components/_cards.scss */
+    .cards__picture--2 {
+      background-image: linear-gradient(to right bottom, #00b09bbe, #96c93dc0); }
+    /* line 76, style/components/_cards.scss */
+    .cards__picture--3 {
+      background-image: linear-gradient(to right bottom, #2998ff, #5643fa); }
+  /* line 80, style/components/_cards.scss */
+  .cards__heading {
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #fff;
+    position: absolute;
+    text-align: right;
+    left: 2rem;
+    width: 75%;
+    top: 11rem; }
+  /* line 93, style/components/_cards.scss */
+  .cards__span {
+    padding: 1rem 1.25rem;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone; }
+    /* line 98, style/components/_cards.scss */
+    .cards__span--1 {
+      background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85)); }
+    /* line 102, style/components/_cards.scss */
+    .cards__span--2 {
+      background-image: linear-gradient(to right bottom, rgba(0, 176, 155, 0.85), rgba(150, 201, 61, 0.85)); }
+    /* line 105, style/components/_cards.scss */
+    .cards__span--3 {
+      background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.85), rgba(86, 67, 250, 0.85)); }
+  /* line 110, style/components/_cards.scss */
+  .cards__details {
+    color: #000;
+    margin-top: 3rem; }
+    /* line 113, style/components/_cards.scss */
+    .cards__details ul {
+      list-style-type: none;
+      width: 80%;
+      margin: 0 auto; }
+      /* line 117, style/components/_cards.scss */
+      .cards__details ul li {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem; }
+        /* line 121, style/components/_cards.scss */
+        .cards__details ul li:not(:last-child) {
+          border-bottom: 1.3px solid #e7e8e9; }
 
 /* line 1, style/pages/_home.scss */
 .section-about {
