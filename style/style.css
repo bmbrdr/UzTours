@@ -29,9 +29,10 @@ body {
   font-size: 200%;
   font-weight: 400;
   letter-spacing: 2.5rem;
-  animation: MoveInRight 2s; }
+  animation: MoveInRight 2s;
+  margin-bottom: 10rem; }
 
-/* line 16, style/base/_typography.scss */
+/* line 17, style/base/_typography.scss */
 .heading-secondary {
   letter-spacing: .8rem;
   font-weight: 800;
@@ -39,18 +40,18 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  background-image: linear-gradient(to right bottom, rgba(0, 176, 155, 0.8), rgba(150, 201, 61, 0.6)), url(background.jpg);
+  background-image: linear-gradient(to right bottom, rgba(85, 197, 122, 0.8), rgba(150, 201, 61, 0.6)), url(background.jpg);
   transition: all 1s; }
-  /* line 32, style/base/_typography.scss */
+  /* line 33, style/base/_typography.scss */
   .heading-secondary:hover {
     transform: skewX(10deg) skewY(2deg) scale(1.5); }
 
-/* line 37, style/base/_typography.scss */
+/* line 38, style/base/_typography.scss */
 .heading-tertiary {
   font-weight: 600;
   font-size: 2rem; }
 
-/* line 42, style/base/_typography.scss */
+/* line 43, style/base/_typography.scss */
 .heading-tertiary, .paragraph {
   color: #595959; }
 
@@ -118,7 +119,7 @@ body {
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
-  background-image: linear-gradient(to right bottom, rgba(0, 176, 155, 0.8), rgba(150, 201, 61, 0.6)), url(background.jpg); }
+  background-image: linear-gradient(to right bottom, rgba(85, 197, 122, 0.8), rgba(150, 201, 61, 0.6)), url(background.jpg); }
   /* line 20, style/layout/_header.scss */
   .heading-primary {
     text-transform: uppercase;
@@ -196,41 +197,47 @@ body {
   border-radius: 10rem;
   text-transform: uppercase;
   transition: all .2s;
-  position: absolute;
-  top: 15rem;
-  left: 18rem;
+  position: relative;
   border: none;
   cursor: pointer; }
 
-/* line 16, style/components/_buttons.scss */
+/* line 15, style/components/_buttons.scss */
 .btn--animated {
   animation: MoveInBot .5s ease-out .75s;
   animation-fill-mode: backwards; }
 
-/* line 20, style/components/_buttons.scss */
+/* line 19, style/components/_buttons.scss */
+.btn--green {
+  color: #fff;
+  background-color: #55c57a; }
+  /* line 22, style/components/_buttons.scss */
+  .btn--green::after {
+    background-color: #55c57a; }
+
+/* line 27, style/components/_buttons.scss */
 .btn--white {
   color: #777;
   background-color: #fff; }
-  /* line 24, style/components/_buttons.scss */
+  /* line 30, style/components/_buttons.scss */
   .btn--white::after {
     background-color: #fff; }
 
-/* line 30, style/components/_buttons.scss */
+/* line 36, style/components/_buttons.scss */
 .btn:hover {
   transform: translateY(-0.3rem);
   box-shadow: rgba(0, 0, 0, 0.2) 0 1rem 2rem; }
-  /* line 34, style/components/_buttons.scss */
+  /* line 40, style/components/_buttons.scss */
   .btn:hover::after {
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0; }
 
-/* line 39, style/components/_buttons.scss */
+/* line 45, style/components/_buttons.scss */
 .btn:active, .btn:focus {
   outline: none;
   transform: translateY(-0.1rem);
   box-shadow: rgba(0, 0, 0, 0.2) 0 0.5rem 1rem; }
 
-/* line 45, style/components/_buttons.scss */
+/* line 51, style/components/_buttons.scss */
 .btn::after {
   content: "";
   height: 100%;
@@ -243,24 +250,24 @@ body {
   z-index: -1;
   transition: all .4s; }
 
-/* line 63, style/components/_buttons.scss */
+/* line 69, style/components/_buttons.scss */
 .btn-text:link, .btn-text:visited {
   position: absolute;
   display: inline;
   padding: .7rem;
   text-decoration: none;
-  color: #00b09bbe;
-  border-bottom: #00b09bbe solid 1px;
+  color: #55c57a;
+  border-bottom: #55c57a solid 1px;
   transition: all .2s; }
 
-/* line 78, style/components/_buttons.scss */
+/* line 84, style/components/_buttons.scss */
 .btn-text:hover {
   transform: translateY(-3px);
-  background-color: #00b09bbe;
+  background-color: #55c57a;
   color: #fff;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
 
-/* line 86, style/components/_buttons.scss */
+/* line 92, style/components/_buttons.scss */
 .btn-text:focus {
   transform: translateY(0);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
@@ -315,7 +322,7 @@ body {
     display: inline-block;
     font-size: 6rem;
     margin-bottom: .5rem;
-    background-image: linear-gradient(to right, #96c93d, #00b09b);
+    background-image: linear-gradient(to right, #96c93d, #55c57a);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent; }
@@ -340,84 +347,175 @@ body {
     position: absolute;
     top: 0;
     left: 0; }
-    /* line 36, style/components/_cards.scss */
+    /* line 25, style/components/_cards.scss */
     .cards__side--front {
       background-color: #fff; }
-    /* line 39, style/components/_cards.scss */
+    /* line 28, style/components/_cards.scss */
     .cards__side--back {
       transform: rotateY(180deg); }
-      /* line 41, style/components/_cards.scss */
+      /* line 30, style/components/_cards.scss */
       .cards__side--back-1 {
         background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
-      /* line 44, style/components/_cards.scss */
+      /* line 33, style/components/_cards.scss */
       .cards__side--back-2 {
-        background-image: linear-gradient(to right bottom, #00b09bbe, #96c93dc0); }
-      /* line 47, style/components/_cards.scss */
+        background-image: linear-gradient(to right bottom, #55c57a, #96c93dc0); }
+      /* line 36, style/components/_cards.scss */
       .cards__side--back-3 {
         background-image: linear-gradient(to right bottom, #2998ff, #5643fa); }
-  /* line 53, style/components/_cards.scss */
+  /* line 42, style/components/_cards.scss */
   .cards:hover .cards__side--front {
     transform: rotateY(-180deg); }
-  /* line 56, style/components/_cards.scss */
+  /* line 45, style/components/_cards.scss */
   .cards:hover .cards__side--back {
     transform: rotateY(0); }
-  /* line 63, style/components/_cards.scss */
+  /* line 52, style/components/_cards.scss */
   .cards__picture {
     background-size: cover;
-    background-blend-mode: screen;
     height: 23rem;
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
-    /* line 69, style/components/_cards.scss */
+    background-blend-mode: screen;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 90%); }
+    /* line 59, style/components/_cards.scss */
     .cards__picture--1 {
-      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../../card1.jpg); }
-    /* line 73, style/components/_cards.scss */
+      background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.88), rgba(255, 119, 48, 0.88)), url(../card1.jpg); }
+    /* line 63, style/components/_cards.scss */
     .cards__picture--2 {
-      background-image: linear-gradient(to right bottom, #00b09bbe, #96c93dc0); }
-    /* line 76, style/components/_cards.scss */
+      background-image: linear-gradient(to right bottom, #55c57a, #96c93dc0); }
+    /* line 66, style/components/_cards.scss */
     .cards__picture--3 {
       background-image: linear-gradient(to right bottom, #2998ff, #5643fa); }
-  /* line 80, style/components/_cards.scss */
+  /* line 70, style/components/_cards.scss */
   .cards__heading {
-    font-size: 2.8rem;
+    font-size: 3.3rem;
     font-weight: 300;
     text-transform: uppercase;
     color: #fff;
     position: absolute;
     text-align: right;
-    left: 2rem;
-    width: 75%;
+    left: 12rem;
+    width: 60%;
     top: 11rem; }
-  /* line 93, style/components/_cards.scss */
+  /* line 83, style/components/_cards.scss */
   .cards__span {
-    padding: 1rem 1.25rem;
+    padding: 1rem 1rem;
     box-decoration-break: clone;
     -webkit-box-decoration-break: clone; }
-    /* line 98, style/components/_cards.scss */
+    /* line 88, style/components/_cards.scss */
     .cards__span--1 {
       background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85)); }
-    /* line 102, style/components/_cards.scss */
+    /* line 92, style/components/_cards.scss */
     .cards__span--2 {
-      background-image: linear-gradient(to right bottom, rgba(0, 176, 155, 0.85), rgba(150, 201, 61, 0.85)); }
-    /* line 105, style/components/_cards.scss */
+      background-image: linear-gradient(to right bottom, rgba(85, 197, 122, 0.85), rgba(150, 201, 61, 0.85)); }
+    /* line 95, style/components/_cards.scss */
     .cards__span--3 {
       background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.85), rgba(86, 67, 250, 0.85)); }
-  /* line 110, style/components/_cards.scss */
+  /* line 100, style/components/_cards.scss */
   .cards__details {
     color: #000;
     margin-top: 3rem; }
-    /* line 113, style/components/_cards.scss */
+    /* line 103, style/components/_cards.scss */
     .cards__details ul {
       list-style-type: none;
       width: 80%;
       margin: 0 auto; }
-      /* line 117, style/components/_cards.scss */
+      /* line 107, style/components/_cards.scss */
       .cards__details ul li {
         text-align: center;
         font-size: 1.5rem;
         padding: 1rem; }
-        /* line 121, style/components/_cards.scss */
+        /* line 111, style/components/_cards.scss */
         .cards__details ul li:not(:last-child) {
           border-bottom: 1.3px solid #e7e8e9; }
+  /* line 117, style/components/_cards.scss */
+  .cards__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  /* line 125, style/components/_cards.scss */
+  .cards__price-box {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 8rem; }
+  /* line 132, style/components/_cards.scss */
+  .cards__price-only {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem; }
+  /* line 139, style/components/_cards.scss */
+  .cards__price-value {
+    font-size: 6rem;
+    font-weight: 100; }
+
+/* line 1, style/components/_story.scss */
+.story {
+  width: 75%;
+  margin: 0 auto;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 3px;
+  padding: 6rem;
+  font-size: 1.6rem;
+  transform: skewX(-12deg); }
+  /* line 19, style/components/_story.scss */
+  .story__shape {
+    width: 15rem;
+    height: 15rem;
+    float: left;
+    background-color: red;
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    transform: translateX(-3rem) translateY(-3rem) skewX(12deg);
+    position: relative; }
+  /* line 31, style/components/_story.scss */
+  .story__img {
+    height: 100%;
+    transition: all .5s; }
+    /* line 33, style/components/_story.scss */
+    .story__img-1 {
+      transform: translateX(-6.5rem) scale(1.4); }
+    /* line 36, style/components/_story.scss */
+    .story__img-2 {
+      transform: scale(1.4);
+      backface-visibility: hidden; }
+  /* line 43, style/components/_story.scss */
+  .story__caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    text-align: center;
+    transition: all .5s;
+    opacity: 0; }
+  /* line 56, style/components/_story.scss */
+  .story:hover .story__caption {
+    transform: translate(-50%, -50%);
+    opacity: 1; }
+  /* line 60, style/components/_story.scss */
+  .story:hover .story__img {
+    filter: blur(1px) brightness(65%);
+    transform: scale(1); }
+    /* line 63, style/components/_story.scss */
+    .story:hover .story__img-1 {
+      transform: translateX(-6rem); }
+
+/* line 1, style/components/_bg-video.scss */
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1; }
+  /* line 12, style/components/_bg-video.scss */
+  .bg-video__content {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
 
 /* line 1, style/pages/_home.scss */
 .section-about {
@@ -432,7 +530,7 @@ body {
   padding: 25rem 0;
   background-size: cover;
   background-position: center;
-  background-image: linear-gradient(to right bottom, rgba(0, 176, 155, 0.8), rgba(150, 201, 61, 0.6)), url(photo.jpg);
+  background-image: linear-gradient(to right bottom, rgba(85, 197, 122, 0.8), rgba(150, 201, 61, 0.6)), url(photo.jpg);
   transform: skewY(-7deg); }
   /* line 23, style/pages/_home.scss */
   .section-features > * {
@@ -442,9 +540,14 @@ body {
 .section-card {
   margin: 0 auto;
   padding: 70rem 0;
-  padding-bottom: 80rem;
+  padding-bottom: 20rem;
   margin-top: -20vh;
   background-color: #f9fdf7; }
+
+/* line 37, style/pages/_home.scss */
+.section-stories {
+  position: relative;
+  padding: 10rem 0 20rem 0; }
 
 /* line 1, style/utility/_utility.scss */
 .u-text-center {
