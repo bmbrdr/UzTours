@@ -1,0 +1,11 @@
+.navigation{
+    &__background{
+        width:6.5rem;
+        height: 6.5rem;
+        position: fixed;
+        top: 6rem;
+        right: 6rem;
+        border: 50%;
+        background-image: radial-gradient($color-primary-light, );
+    }
+}
